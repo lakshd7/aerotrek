@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>AeroTrek</title>
+  <link rel="icon" href="./imgs/favicon.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <script defer src="./items.js"></script>
+  <script defer src="./script.js"></script>
+  <script defer src="./cart.js"></script>
+  <script defer src="https://kit.fontawesome.com/d7c2afb0c6.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="header">
+    <a href="#"><img src="./imgs/logo-text.png" class="logo"></a>
+    <ul>
+      <li><a class="link" href="./index.html">Home</a></li>
+      <li><a class="link" href="./shop.html">Shop</a></li>
+      <li><a class="link" href="./contact.html">Contact</a></li>
+      <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping cart active"></i></a></li>
+    </ul>
+  </header>
+
+  <!-- Hero section -->
+  <div class="hero-shop" style="height: 200px;">
+    <img src="./imgs/banners/cart.png" />
+    <div>
+      <h1>#cart</h1>
+    </div>
+  </div>
+
+  <!-- Cart container -->
+  <div class="cart-wrapper">
+    <h1 class="cart-empty">Your cart is <span>empty</span></h1>
+    <button class="clear-cart-btn">Clear Cart</button>
+    <div class="cart-container">
+    </div>
+
+    <!-- Checkout information -->
+    <div class="checkout">
+      <div class="row">
+        <h1>Subtotal</h1>
+        <div class="subtotal"></div>
+      </div>
+      <div class="row">
+        <h1>Shipping</h1>
+        <div class="shipping"></div>
+      </div>
+      <div class="row">
+        <h1>Tax</h1>
+        <div class="tax"></div>
+      </div>
+      <div class="row total-row">
+        <h1>Total</h1>
+        <div class="total"></div>
+      </div>
+
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <div class="alert">
+    <div class="alert-container">
+      <h1 class="alert-text"></h1>
+    </div>
+  </div>
+</body>
+
+</html>
