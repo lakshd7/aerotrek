@@ -134,7 +134,6 @@ function addToCart(e) {
   closeItemPage();
   alert('Added to cart!');
   localStorage.setItem('cart', JSON.stringify(cart));
-  console.log(cart);
 }
 let alertTimeout;
 function alert(text) {
